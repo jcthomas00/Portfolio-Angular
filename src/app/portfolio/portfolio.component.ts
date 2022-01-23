@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PortfolioComponent implements OnInit {
 
+  showDialog = false;
+  
   constructor() { }
 
   ngOnInit(): void {

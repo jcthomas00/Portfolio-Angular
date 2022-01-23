@@ -1563,7 +1563,7 @@ textarea.error::-webkit-input-placeholder {
 
 @media (max-width: 560px) {
 	.card-started {
-		height: 480px;
+		height: 380px;
 	}
 
 	.card-started:after {
@@ -1575,7 +1575,7 @@ textarea.error::-webkit-input-placeholder {
 	}
 
 	.card-started .profile.no-photo {
-		padding-top: 250px;
+		padding-top: 225px;
 	}
 
 	.card-started .profile .slide {
@@ -1607,8 +1607,8 @@ textarea.error::-webkit-input-placeholder {
 	height: 570px;
 	background: #ffffff;
 	transform-origin: center left;
-	opacity: 0;
-	visibility: hidden;
+	// opacity: 0;
+	// visibility: hidden;
 	z-index: 8;
 	border-radius: 4px;
 	-moz-border-radius: 4px;
@@ -1620,23 +1620,6 @@ textarea.error::-webkit-input-placeholder {
 	-o-transition: visibility 1s linear, opacity 0.5s linear;
 }
 
-.card-inner.animated {
-	opacity: 1;
-	visibility: visible;
-	z-index: 9;
-}
-
-.card-inner.active {
-	opacity: 1;
-	visibility: visible;
-	z-index: 10;
-}
-
-.card-inner.hidden {
-	opacity: 0;
-	visibility: hidden;
-	z-index: 9;
-}
 
 .card-inner:before,
 .card-inner:after {
@@ -1650,18 +1633,17 @@ textarea.error::-webkit-input-placeholder {
 	z-index: 10;
 }
 
-.card-inner:after {
-	top: auto;
-	bottom: 0;
-}
-
 .card-inner .card-wrap {
 	padding: 30px 30px 30px 60px;
-	position: relative;
+	position: absolute;
+	top: 15px;
 	overflow-x: hidden;
 	height: 100%;
+	width: 100%;
 }
-
+.box-item img {
+    max-width: 100%;
+}
 @media (max-width: 1072px) {
 	.card-inner {
 		width: 115%;
@@ -1676,9 +1658,9 @@ textarea.error::-webkit-input-placeholder {
 		left: 0;
 		top: 0;
 		width: auto;
-		height: auto;
 		opacity: 1;
 		visibility: visible;
+		overflow: scroll;
 	}
 
 	.card-inner .card-wrap {
@@ -2621,12 +2603,6 @@ textarea.error::-webkit-input-placeholder {
 */
 
 /* Cards */
-.card-inner {
-	transition: visibility 1s linear, opacity 0s linear;
-	-moz-transition: visibility 1s linear, opacity 0s linear;
-	-webkit-transition: visibility 1s linear, opacity 0s linear;
-	-o-transition: visibility 1s linear, opacity 0s linear;
-}
 
 .content.works .filter-menu .f_btn input {
 	cursor: pointer;

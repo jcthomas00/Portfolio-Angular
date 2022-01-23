@@ -26,10 +26,12 @@
          </div>
          <noscript>You need to enable JavaScript to run this app.</noscript>
 
-        <div class="container opened" data-animation-in="fadeInLeft" data-animation-out="fadeOutLeft">
+        <div class="container opened" >
             <app-menu></app-menu>
             <app-intro></app-intro>
-            <router-outlet></router-outlet>
+            <div class="card-inner" [@slideInOut]>
+               <router-outlet></router-outlet>
+            </div>
         </div>
 
       </div>
