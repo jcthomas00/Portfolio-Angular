@@ -1242,9 +1242,10 @@ textarea.error::-webkit-input-placeholder {
 .header .profile {
 	padding: 10px 62px 10px 18px;
 	width: auto;
-	height: 64px;
+	height: 75px;
 	text-align: left;
 	display: none;
+	background: #fff;
 }
 
 .header .profile .image {
@@ -1361,7 +1362,9 @@ textarea.error::-webkit-input-placeholder {
 		max-width: 100%;
 	}
 	.header .profile {
-		display: block;
+		display: flex;
+		flex-wrap: wrap;
+		align-content: center;
 	}
 	.header .menu-btn {
 	    position: absolute;
@@ -4268,9 +4271,9 @@ p.no-comments {
 	color: #323232;
 }
 
-.typed-cursor {
-    display: none!important;
-}
+// .typed-cursor {
+//     display: none!important;
+// }
 
 
 /* TABLE OF CONTENTS
