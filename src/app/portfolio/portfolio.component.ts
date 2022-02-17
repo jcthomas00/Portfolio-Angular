@@ -33,7 +33,7 @@ export class PortfolioComponent implements OnInit {
       description: "The app uses a Node and Express environment, MySql for a database and HTML, CSS and Javascript on the front-end. Google Language API is used for transcription and Intermediate API is used to get a diagnosis.",
       tools: ["NodeJS", "Express", "Firebase", "OAuth", "REST APIs", "HTML", "CSS", "JavaScript"],
       link: "https://easy-diagnoser.herokuapp.com/",
-      git: "https://easy-diagnoser.herokuapp.com/"
+      git: "https://github.com/jcthomas00/EasyDiagnosis"
     },
     {
       img: "uth-careers-framed.jpg",
