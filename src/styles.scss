@@ -87,6 +87,7 @@ body {
 }
 
 @media (max-width: 1072px) {
+	
 	.container {
 		margin: -300px 0 0 -220px;
 		width: 440px;
@@ -123,6 +124,9 @@ body {
 		-o-transform: none;
 	}
 
+	.mat-dialog-container {
+		max-width: 100%;
+	 }
 }
 
 @media (max-width: 560px) {
@@ -219,6 +223,9 @@ body {
 		width: 8.333%;
 	}
 
+	.mat-dialog-container {
+		max-width: 712px;
+	 }
 }
 
 @media (max-width: 1023px) {
@@ -323,6 +330,11 @@ body {
 
 }
 
+.mat-dialog-container img {
+	max-width: 100%;
+	margin-bottom: 20px;
+ }
+ 
 .row:after {
 	content: '';
 	display: block;
@@ -4853,3 +4865,6 @@ p.no-comments {
         -khtml-border-radius: 4px;
     }
 
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

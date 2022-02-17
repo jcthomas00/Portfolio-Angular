@@ -1,104 +1,135 @@
-    <div class="card-wrap">
-       <div class="content works">
-          <div class="title">Recent Works</div>
+<div class="card-wrap">
+   <div class="content works">
+      <div class="title">Recent Works</div>
 
-          <button (click)="showDialog = !showDialog" class="btn">Open</button>
+      <!-- <button (click)="showDialog = !showDialog" class="btn">Open</button>
 
           <app-dialog [(visible)]="showDialog">
              <h1>Hello World</h1>
              <button (click)="showDialog = !showDialog" class="btn">Close</button>
-          </app-dialog>
+          </app-dialog> -->
 
-          <div class="row grid-items border-line-v">
-             <div class="col col-d-6 col-t-6 col-m-12 grid-item design border-line-h">
-                <div class="box-item">
-                   <div class="image">
-                      <div class="has-popup-media"><img src="../../assets/images/works/easydiagnoser-framed.jpg" alt="Easy Diagnoser Web Application"><span class="info"><span class="ion ion-images"></span></span></div>
-                   </div>
-                   <div class="desc"><a href="#easydiagnoser" class="name has-popup-media">Easy Diagnoser Web Application</a></div>
-                </div>
-             </div>
-             <div class="col col-d-6 col-t-6 col-m-12 grid-item design border-line-h">
-                <div class="box-item">
-                   <div class="image">
-                      <div class="has-popup-media"><img src="../../assets/images/works/uth-careers-framed.jpg" alt="UTHealth Careers Page Redesign"><span class="info"><span class="ion ion-images"></span></span></div>
-                   </div>
-                   <div class="desc"><a href="#uthcareers" class="name has-popup-media">UTHealth Careers Page Redesign</a></div>
-                </div>
-             </div>
-             <div class="col col-d-6 col-t-6 col-m-12 grid-item design border-line-h">
-                <div class="box-item">
-                   <div class="image">
-                      <div class="has-popup-media"><img src="../../assets/images/works/asr-framed.jpg" alt="Associated Spring Raymond Token &amp; API Integration"><span class="info"><span class="ion ion-images"></span></span></div>
-                   </div>
-                   <div class="desc"><a href="#asr" class="name has-popup-media">Associated Spring Raymond Token &amp; API Integration</a></div>
-                </div>
-             </div>
-             <div class="col col-d-6 col-t-6 col-m-12 grid-item design border-line-h">
-                <div class="box-item">
-                   <div class="image">
-                      <div class="has-popup-media"><img src="../../assets/images/works/uteap-framed.jpg" alt="UTEAP Site Redesign &amp; Custom API"><span class="info"><span class="ion ion-images"></span></span></div>
-                   </div>
-                   <div class="desc"><a href="#uteap" class="name has-popup-media">UTEAP Site Redesign &amp; Custom API</a></div>
-                </div>
-             </div>
-             <div class="col col-d-6 col-t-6 col-m-12 grid-item design border-line-h">
-                <div class="box-item">
-                   <div class="image">
-                      <div class="has-popup-media"><img src="../../assets/images/works/twm-framed.jpg" alt="TW Metals Custom Template"><span class="info"><span class="ion ion-images"></span></span></div>
-                   </div>
-                   <div class="desc"><a href="#twmetals" class="name has-popup-media">TW Metals Custom Template</a></div>
-                </div>
-             </div>
-             <div class="col col-d-6 col-t-6 col-m-12 grid-item design border-line-h">
-                <div class="box-item">
-                   <div class="image">
-                      <div class="has-popup-media"><img src="../../assets/images/works/meyer-framed.jpg" alt="Meyer Now Learning System"><span class="info"><span class="ion ion-images"></span></span></div>
-                   </div>
-                   <div class="desc"><a href="#meyernow" class="name has-popup-media">Meyer Now Learning System</a></div>
-                </div>
-             </div>
-             <div class="col col-d-6 col-t-6 col-m-12 grid-item design border-line-h">
-                <div class="box-item">
-                   <div class="image">
-                      <div class="has-popup-media"><img src="../../assets/images/works/leeco-framed.jpg" alt="Leeco Steel Template &amp; Module Creation"><span class="info"><span class="ion ion-images"></span></span></div>
-                   </div>
-                   <div class="desc"><a href="#leeco" class="name has-popup-media">Leeco Steel Template &amp; Module Creation</a></div>
-                </div>
-             </div>
-             <div class="col col-d-6 col-t-6 col-m-12 grid-item design border-line-h">
-                <div class="box-item">
-                   <div class="image">
-                      <div class="has-popup-media"><img src="../../assets/images/works/keeling-framed.jpg" alt="Keeling Law Firm Redesign Implementation"><span class="info"><span class="ion ion-images"></span></span></div>
-                   </div>
-                   <div class="desc"><a href="#keelinglaw" class="name has-popup-media">Keeling Law Firm Redesign Implementation</a></div>
-                </div>
-             </div>
-             <div class="col col-d-6 col-t-6 col-m-12 grid-item design border-line-h">
-                <div class="box-item">
-                   <div class="image">
-                      <div class="has-popup-media"><img src="../../assets/images/works/bpl-framed.jpg" alt="B&amp;P Littleford Redesign Implementation"><span class="info"><span class="ion ion-images"></span></span></div>
-                   </div>
-                   <div class="desc"><a href="#bplittle" class="name has-popup-media">B&amp;P Littleford Redesign Implementation</a></div>
-                </div>
-             </div>
-             <div class="col col-d-6 col-t-6 col-m-12 grid-item design border-line-h">
-                <div class="box-item">
-                   <div class="image">
-                      <div class="has-popup-media"><img src="../../assets/images/works/gifs-queen-framed.jpg" alt="GifTastic Web Application"><span class="info"><span class="ion ion-images"></span></span></div>
-                   </div>
-                   <div class="desc"><a href="#queengifs" class="name has-popup-media">GifTastic Web Application</a></div>
-                </div>
-             </div>
-             <div class="col col-d-6 col-t-6 col-m-12 grid-item design border-line-h">
-                <div class="box-item">
-                   <div class="image">
-                      <div class="has-popup-media"><img src="../../assets/images/works/anime-trivia-framed.jpg" alt="Easy Diagnoser"><span class="info"><span class="ion ion-images"></span></span></div>
-                   </div>
-                   <div class="desc"><a href="#animetrivia" class="name has-popup-media">Easy Diagnoser</a></div>
-                </div>
-             </div>
-             <div class="clear"></div>
-          </div>
-       </div>
-    </div>
+      <!-- <button (click)="showPortfolioDialog[0] = !showPortfolioDialog[0]" class="btn">Open</button> -->
+      <button mat-button (click)="openDialog(0)">Open dialog</button>
+
+      <div class="row grid-items border-line-v">
+         <div class="col col-d-6 col-t-6 col-m-12 grid-item design border-line-h">
+            <div class="box-item" (click)="openDialog(0)">
+               <div class="image">
+                  <div class="has-popup-media"><img src="../../assets/images/works/easydiagnoser-framed.jpg"
+                        alt="Easy Diagnoser Web Application"><span class="info"><span
+                           class="ion ion-images"></span></span></div>
+               </div>
+               <div class="desc"><a href="#easydiagnoser" class="name has-popup-media">Easy Diagnoser Web
+                     Application</a></div>
+            </div>
+         </div>
+         <div class="col col-d-6 col-t-6 col-m-12 grid-item design border-line-h">
+            <div class="box-item" (click)="openDialog(1)">
+               <div class="image">
+                  <div class="has-popup-media"><img src="../../assets/images/works/uth-careers-framed.jpg"
+                        alt="UTHealth Careers Page Redesign"><span class="info"><span
+                           class="ion ion-images"></span></span></div>
+               </div>
+               <div class="desc"><a href="#uthcareers" class="name has-popup-media">UTHealth Careers Page Redesign</a>
+               </div>
+            </div>
+         </div>
+         <div class="col col-d-6 col-t-6 col-m-12 grid-item design border-line-h">
+            <div class="box-item" (click)="openDialog(2)">
+               <div class="image">
+                  <div class="has-popup-media"><img src="../../assets/images/works/asr-framed.jpg"
+                        alt="Associated Spring Raymond Token &amp; API Integration"><span class="info"><span
+                           class="ion ion-images"></span></span></div>
+               </div>
+               <div class="desc"><a href="#asr" class="name has-popup-media">Associated Spring Raymond Token &amp; API
+                     Integration</a></div>
+            </div>
+         </div>
+         <div class="col col-d-6 col-t-6 col-m-12 grid-item design border-line-h">
+            <div class="box-item" (click)="openDialog(3)">
+               <div class="image">
+                  <div class="has-popup-media"><img src="../../assets/images/works/uteap-framed.jpg"
+                        alt="UTEAP Site Redesign &amp; Custom API"><span class="info"><span
+                           class="ion ion-images"></span></span></div>
+               </div>
+               <div class="desc"><a href="#uteap" class="name has-popup-media">UTEAP Site Redesign &amp; Custom API</a>
+               </div>
+            </div>
+         </div>
+         <div class="col col-d-6 col-t-6 col-m-12 grid-item design border-line-h">
+            <div class="box-item" (click)="openDialog(4)">
+               <div class="image">
+                  <div class="has-popup-media"><img src="../../assets/images/works/twm-framed.jpg"
+                        alt="TW Metals Custom Template"><span class="info"><span class="ion ion-images"></span></span>
+                  </div>
+               </div>
+               <div class="desc"><a href="#twmetals" class="name has-popup-media">TW Metals Custom Template</a></div>
+            </div>
+         </div>
+         <div class="col col-d-6 col-t-6 col-m-12 grid-item design border-line-h">
+            <div class="box-item" (click)="openDialog(5)">
+               <div class="image">
+                  <div class="has-popup-media"><img src="../../assets/images/works/meyer-framed.jpg"
+                        alt="Meyer Now Learning System"><span class="info"><span class="ion ion-images"></span></span>
+                  </div>
+               </div>
+               <div class="desc"><a href="#meyernow" class="name has-popup-media">Meyer Now Learning System</a></div>
+            </div>
+         </div>
+         <div class="col col-d-6 col-t-6 col-m-12 grid-item design border-line-h">
+            <div class="box-item" (click)="openDialog(6)">
+               <div class="image">
+                  <div class="has-popup-media"><img src="../../assets/images/works/leeco-framed.jpg"
+                        alt="Leeco Steel Template &amp; Module Creation"><span class="info"><span
+                           class="ion ion-images"></span></span></div>
+               </div>
+               <div class="desc"><a href="#leeco" class="name has-popup-media">Leeco Steel Template &amp; Module
+                     Creation</a></div>
+            </div>
+         </div>
+         <div class="col col-d-6 col-t-6 col-m-12 grid-item design border-line-h">
+            <div class="box-item" (click)="openDialog(7)">
+               <div class="image">
+                  <div class="has-popup-media"><img src="../../assets/images/works/keeling-framed.jpg"
+                        alt="Keeling Law Firm Redesign Implementation"><span class="info"><span
+                           class="ion ion-images"></span></span></div>
+               </div>
+               <div class="desc"><a href="#keelinglaw" class="name has-popup-media">Keeling Law Firm Redesign
+                     Implementation</a></div>
+            </div>
+         </div>
+         <div class="col col-d-6 col-t-6 col-m-12 grid-item design border-line-h">
+            <div class="box-item" (click)="openDialog(8)">
+               <div class="image">
+                  <div class="has-popup-media"><img src="../../assets/images/works/bpl-framed.jpg"
+                        alt="B&amp;P Littleford Redesign Implementation"><span class="info"><span
+                           class="ion ion-images"></span></span></div>
+               </div>
+               <div class="desc"><a href="#bplittle" class="name has-popup-media">B&amp;P Littleford Redesign
+                     Implementation</a></div>
+            </div>
+         </div>
+         <div class="col col-d-6 col-t-6 col-m-12 grid-item design border-line-h">
+            <div class="box-item" (click)="openDialog(9)">
+               <div class="image">
+                  <div class="has-popup-media"><img src="../../assets/images/works/gifs-queen-framed.jpg"
+                        alt="GifTastic Web Application"><span class="info"><span class="ion ion-images"></span></span>
+                  </div>
+               </div>
+               <div class="desc"><a href="#queengifs" class="name has-popup-media">GifTastic Web Application</a></div>
+            </div>
+         </div>
+         <div class="col col-d-6 col-t-6 col-m-12 grid-item design border-line-h">
+            <div class="box-item" (click)="openDialog(10)">
+               <div class="image">
+                  <div class="has-popup-media"><img src="../../assets/images/works/anime-trivia-framed.jpg"
+                        alt="Easy Diagnoser"><span class="info"><span class="ion ion-images"></span></span></div>
+               </div>
+               <div class="desc"><a href="#animetrivia" class="name has-popup-media">Easy Diagnoser</a></div>
+            </div>
+         </div>
+         <div class="clear"></div>
+      </div>
+   </div>
+</div>

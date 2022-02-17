@@ -1,0 +1,22 @@
+<div class="content">
+     <div class="image"><img src="../../assets/images/works/{{data.img}}" alt="{{data.heading}}"></div>
+     <div class="desc">
+          <div class="post-box">
+               <h1>{{data.heading}}</h1>
+               <div class="blog-content">
+                    <p>{{data.description}}</p>
+                    <h3>Tools and tech used:</h3>
+                    {{data.link}}
+                    <ul class="list-style">
+                         <li *ngFor="let tool of data.tools">{{tool}}</li>
+                    </ul>
+               </div>
+               <a *ngIf="data.link" href="{{data.link}}" class="button">
+                    <span class="text">View Project</span><span class="arrow"></span>
+               </a>
+               <a *ngIf="data.git" href="{{data.git}}" class="button">
+                    <span class="text">View Code</span><span class="arrow"></span>
+               </a>
+          </div>
+     </div>
+</div>
