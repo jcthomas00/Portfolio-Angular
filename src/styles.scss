@@ -332,9 +332,57 @@ body {
 
 .mat-dialog-container img {
 	max-width: 100%;
-	margin-bottom: 20px;
+	margin-bottom: 10px;
+ }
+ .mat-dialog-container ul.list-style {
+	margin: 0 0 25px;
+	list-style: none;
+	font-size: 13px;
+	display: flex;
+	flex-wrap: wrap;
+ }
+ .mat-dialog-container p {
+	margin-bottom: 10px;
+ }
+ .mat-dialog-container.mat-dialog-container {
+	 height: 100vh;
+ }
+.mat-dialog-actions {
+	border-top: 1px solid #78cc6d;
+ }
+ .mat-dialog-actions a {
+	border: 1px solid #78cc6d;
+	margin: 0 10px;
+	padding: 10px;
+	background-color: #78cc6d;
+	color: #fff;
+ }
+ .mat-dialog-actions a:hover {
+	background-color: #fff;
+	color: #78cc6d;
+ }
+ .mat-dialog-container .mat-dialog-content {
+	 max-height: 90vh;
+ }
+ .dialog-content {
+	max-height: 100vh;
+	overflow-y: scroll;
+ }
+ .mat-dialog-container ul.list-style > li:before {
+	margin: 0;
+	content: '';
+	display: inline-block;
+	margin: 0 10px;
+	top: 11px;
+	width: 4px;
+	height: 4px;
+	background: #78cc6d;
  }
  
+ .mat-dialog-container ul.list-style > li:first-child:before {
+	width: 0px;
+	margin: 0;
+ }
 .row:after {
 	content: '';
 	display: block;
@@ -2235,6 +2283,7 @@ textarea.error::-webkit-input-placeholder {
 	position: relative;
 	overflow: hidden;
 	text-align: center;
+	cursor: pointer;
 }
 
 .box-item .image {

@@ -10,7 +10,7 @@
           </app-dialog> -->
 
       <!-- <button (click)="showPortfolioDialog[0] = !showPortfolioDialog[0]" class="btn">Open</button> -->
-      <button mat-button (click)="openDialog(0)">Open dialog</button>
+      <button *ngIf="portfolio[0].git" mat-button (click)="openDialog(0)">Open dialog</button>
 
       <div class="row grid-items border-line-v">
          <div class="col col-d-6 col-t-6 col-m-12 grid-item design border-line-h">
@@ -20,8 +20,7 @@
                         alt="Easy Diagnoser Web Application"><span class="info"><span
                            class="ion ion-images"></span></span></div>
                </div>
-               <div class="desc"><a href="#easydiagnoser" class="name has-popup-media">Easy Diagnoser Web
-                     Application</a></div>
+               <div class="desc">Easy Diagnoser Web Application</div>
             </div>
          </div>
          <div class="col col-d-6 col-t-6 col-m-12 grid-item design border-line-h">
@@ -31,8 +30,7 @@
                         alt="UTHealth Careers Page Redesign"><span class="info"><span
                            class="ion ion-images"></span></span></div>
                </div>
-               <div class="desc"><a href="#uthcareers" class="name has-popup-media">UTHealth Careers Page Redesign</a>
-               </div>
+               <div class="desc">UTHealth Careers Page Redesign</div>
             </div>
          </div>
          <div class="col col-d-6 col-t-6 col-m-12 grid-item design border-line-h">
@@ -42,8 +40,7 @@
                         alt="Associated Spring Raymond Token &amp; API Integration"><span class="info"><span
                            class="ion ion-images"></span></span></div>
                </div>
-               <div class="desc"><a href="#asr" class="name has-popup-media">Associated Spring Raymond Token &amp; API
-                     Integration</a></div>
+               <div class="desc">Associated Spring Raymond Token &amp; API Integration</div>
             </div>
          </div>
          <div class="col col-d-6 col-t-6 col-m-12 grid-item design border-line-h">
@@ -53,8 +50,7 @@
                         alt="UTEAP Site Redesign &amp; Custom API"><span class="info"><span
                            class="ion ion-images"></span></span></div>
                </div>
-               <div class="desc"><a href="#uteap" class="name has-popup-media">UTEAP Site Redesign &amp; Custom API</a>
-               </div>
+               <div class="desc">UTEAP Site Redesign &amp; Custom API</div>
             </div>
          </div>
          <div class="col col-d-6 col-t-6 col-m-12 grid-item design border-line-h">
@@ -64,7 +60,7 @@
                         alt="TW Metals Custom Template"><span class="info"><span class="ion ion-images"></span></span>
                   </div>
                </div>
-               <div class="desc"><a href="#twmetals" class="name has-popup-media">TW Metals Custom Template</a></div>
+               <div class="desc">TW Metals Custom Template</div>
             </div>
          </div>
          <div class="col col-d-6 col-t-6 col-m-12 grid-item design border-line-h">
@@ -74,7 +70,7 @@
                         alt="Meyer Now Learning System"><span class="info"><span class="ion ion-images"></span></span>
                   </div>
                </div>
-               <div class="desc"><a href="#meyernow" class="name has-popup-media">Meyer Now Learning System</a></div>
+               <div class="desc">Meyer Now Learning System</div>
             </div>
          </div>
          <div class="col col-d-6 col-t-6 col-m-12 grid-item design border-line-h">
@@ -84,8 +80,7 @@
                         alt="Leeco Steel Template &amp; Module Creation"><span class="info"><span
                            class="ion ion-images"></span></span></div>
                </div>
-               <div class="desc"><a href="#leeco" class="name has-popup-media">Leeco Steel Template &amp; Module
-                     Creation</a></div>
+               <div class="desc">Leeco Steel Template &amp; Module Creation</div>
             </div>
          </div>
          <div class="col col-d-6 col-t-6 col-m-12 grid-item design border-line-h">
@@ -95,8 +90,7 @@
                         alt="Keeling Law Firm Redesign Implementation"><span class="info"><span
                            class="ion ion-images"></span></span></div>
                </div>
-               <div class="desc"><a href="#keelinglaw" class="name has-popup-media">Keeling Law Firm Redesign
-                     Implementation</a></div>
+               <div class="desc">Keeling Law Firm Redesign Implementation</div>
             </div>
          </div>
          <div class="col col-d-6 col-t-6 col-m-12 grid-item design border-line-h">
@@ -106,8 +100,7 @@
                         alt="B&amp;P Littleford Redesign Implementation"><span class="info"><span
                            class="ion ion-images"></span></span></div>
                </div>
-               <div class="desc"><a href="#bplittle" class="name has-popup-media">B&amp;P Littleford Redesign
-                     Implementation</a></div>
+               <div class="desc">B&amp;P Littleford Redesign Implementation</div>
             </div>
          </div>
          <div class="col col-d-6 col-t-6 col-m-12 grid-item design border-line-h">
@@ -117,7 +110,7 @@
                         alt="GifTastic Web Application"><span class="info"><span class="ion ion-images"></span></span>
                   </div>
                </div>
-               <div class="desc"><a href="#queengifs" class="name has-popup-media">GifTastic Web Application</a></div>
+               <div class="desc">GifTastic Web Application</div>
             </div>
          </div>
          <div class="col col-d-6 col-t-6 col-m-12 grid-item design border-line-h">
@@ -126,7 +119,7 @@
                   <div class="has-popup-media"><img src="../../assets/images/works/anime-trivia-framed.jpg"
                         alt="Easy Diagnoser"><span class="info"><span class="ion ion-images"></span></span></div>
                </div>
-               <div class="desc"><a href="#animetrivia" class="name has-popup-media">Easy Diagnoser</a></div>
+               <div class="desc">Easy Diagnoser</div>
             </div>
          </div>
          <div class="clear"></div>

@@ -1,22 +1,26 @@
-<div class="content">
+<mat-dialog-content>
      <div class="image"><img src="../../assets/images/works/{{data.img}}" alt="{{data.heading}}"></div>
      <div class="desc">
           <div class="post-box">
-               <h1>{{data.heading}}</h1>
-               <div class="blog-content">
+               <h3>{{data.heading}}</h3>
+               <div>
                     <p>{{data.description}}</p>
-                    <h3>Tools and tech used:</h3>
-                    {{data.link}}
+                    <h5>Tools and tech used:</h5>
                     <ul class="list-style">
                          <li *ngFor="let tool of data.tools">{{tool}}</li>
                     </ul>
                </div>
-               <a *ngIf="data.link" href="{{data.link}}" class="button">
-                    <span class="text">View Project</span><span class="arrow"></span>
-               </a>
-               <a *ngIf="data.git" href="{{data.git}}" class="button">
-                    <span class="text">View Code</span><span class="arrow"></span>
-               </a>
+
           </div>
      </div>
-</div>
+</mat-dialog-content>
+
+<mat-dialog-actions align="center">
+
+     <a mat-button *ngIf="data.link" href="{{data.link}}" target="_blank">
+          <span class="text">View Project</span>
+     </a>
+     <a mat-button *ngIf="data.git" href="{{data.git}}" target="_blank">
+          <span class="text">View Code</span>
+     </a>
+</mat-dialog-actions>
