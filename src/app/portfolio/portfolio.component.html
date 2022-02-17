@@ -2,16 +2,6 @@
    <div class="content works">
       <div class="title">Recent Works</div>
 
-      <!-- <button (click)="showDialog = !showDialog" class="btn">Open</button>
-
-          <app-dialog [(visible)]="showDialog">
-             <h1>Hello World</h1>
-             <button (click)="showDialog = !showDialog" class="btn">Close</button>
-          </app-dialog> -->
-
-      <!-- <button (click)="showPortfolioDialog[0] = !showPortfolioDialog[0]" class="btn">Open</button> -->
-      <button *ngIf="portfolio[0].git" mat-button (click)="openDialog(0)">Open dialog</button>
-
       <div class="row grid-items border-line-v">
          <div class="col col-d-6 col-t-6 col-m-12 grid-item design border-line-h">
             <div class="box-item" (click)="openDialog(0)">

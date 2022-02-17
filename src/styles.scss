@@ -122,6 +122,7 @@ body {
 		-webkit-transform: none;
 		-moz-transform: none;
 		-o-transform: none;
+		padding-bottom: 1px;
 	}
 
 	.mat-dialog-container {
@@ -338,31 +339,34 @@ body {
 	margin: 0 0 25px;
 	list-style: none;
 	font-size: 13px;
-	display: flex;
-	flex-wrap: wrap;
+	display: block;
  }
  .mat-dialog-container p {
 	margin-bottom: 10px;
  }
- .mat-dialog-container.mat-dialog-container {
-	 height: 100vh;
- }
-.mat-dialog-actions {
-	border-top: 1px solid #78cc6d;
- }
- .mat-dialog-actions a {
-	border: 1px solid #78cc6d;
-	margin: 0 10px;
-	padding: 10px;
-	background-color: #78cc6d;
-	color: #fff;
- }
- .mat-dialog-actions a:hover {
-	background-color: #fff;
-	color: #78cc6d;
+//  .mat-dialog-container.mat-dialog-container {
+// 	 height: 100vh;
+//  }
+ 
+//  .mat-dialog-actions a {
+// 	border: 1px solid #78cc6d;
+// 	margin: 0 10px;
+// 	padding: 10px;
+// 	background-color: #78cc6d;
+// 	color: #fff;
+//  }
+//  .mat-dialog-actions a:hover {
+// 	background-color: #fff;
+// 	color: #78cc6d;
+//  }
+mat-dialog-actions.mat-dialog-actions {
+	padding: 0;
+	margin-top: -4px;
  }
  .mat-dialog-container .mat-dialog-content {
 	 max-height: 90vh;
+	 display: inline-block;
+	 position: relative;
  }
  .dialog-content {
 	max-height: 100vh;
@@ -378,11 +382,16 @@ body {
 	height: 4px;
 	background: #78cc6d;
  }
- 
- .mat-dialog-container ul.list-style > li:first-child:before {
-	width: 0px;
-	margin: 0;
- }
+ @media (min-width: 720px) {
+	.mat-dialog-container ul.list-style > li:first-child:before {
+		width: 0px;
+		margin: 0;
+	 }
+	 .mat-dialog-container ul.list-style{ 
+		display: flex;
+		flex-wrap: wrap;
+	 }
+}
 .row:after {
 	content: '';
 	display: block;
@@ -1345,6 +1354,33 @@ textarea.error::-webkit-input-placeholder {
 	display: none;
 }
 
+/* new styles */
+
+.header .top-menu ul li a {
+	padding: 20px 0 20px 0;
+	height: auto;
+}
+.header .top-menu ul li a svg {
+    margin-bottom: 10px;
+}
+.header .top-menu ul li a .icon {
+	margin: 0 auto;
+	position: relative;
+	top: 0;
+	left: 0;
+	height: auto;
+	line-height: normal;
+}
+
+.header .top-menu ul li a .link {
+	position: relative;
+	left: 0;
+	top: 0;
+	width: 100%;
+	line-height: 13px;
+}
+
+
 @media (max-width: 1023px) {
 	.header {
 		position: fixed;
@@ -1373,7 +1409,10 @@ textarea.error::-webkit-input-placeholder {
 		display: block;
 		width: 100%;
 	}
-
+	.header .top-menu ul li a {
+		padding-bottom: 0;
+		height: 75px;
+	}
 	.header .top-menu ul li:first-child a {
 		border-radius: 4px 0 0 4px;
 		-moz-border-radius: 4px 0 0 4px;
@@ -1425,6 +1464,9 @@ textarea.error::-webkit-input-placeholder {
 		display: flex;
 		flex-wrap: wrap;
 		align-content: center;
+		height: 50px;
+		border-radius: 4px 0 0 4px;
+		padding-right: 30px
 	}
 	.header .menu-btn {
 	    position: absolute;
@@ -1433,6 +1475,18 @@ textarea.error::-webkit-input-placeholder {
 	    width: 62px;
 	    height: 62px;
 	}
+	.header .top-menu ul li a .link {
+		display: none;
+	 }
+	 
+	 .header .top-menu ul li a {
+		height: 50px;
+		padding-top: 13px;
+	 }
+	 
+	 .header .top-menu ul li:first-child a {
+		border-radius: 0;
+	 }
 }
 
 /*
@@ -1724,6 +1778,7 @@ textarea.error::-webkit-input-placeholder {
 		opacity: 1;
 		visibility: visible;
 		overflow: scroll;
+		height: calc(100vh - 100px);
 	}
 
 	.card-inner .card-wrap {
@@ -2258,9 +2313,9 @@ textarea.error::-webkit-input-placeholder {
 }
 
 @media (max-width: 560px) {
-	.content.works .title {
-		padding: 0 0 45px 0;
-	}
+	app-intro {
+		display: none;
+	 }
 
 	.content.works .filter-menu {
 		top: 35px;
@@ -2522,39 +2577,6 @@ textarea.error::-webkit-input-placeholder {
 	left: 0;
 	top: 0;
 	opacity: 0;
-}
-
-/* new styles */
-
-.header .top-menu ul li a {
-	padding: 20px 0 20px 0;
-	height: auto;
-}
-.header .top-menu ul li a svg {
-    margin-bottom: 10px;
-}
-.header .top-menu ul li a .icon {
-	margin: 0 auto;
-	position: relative;
-	top: 0;
-	left: 0;
-	height: auto;
-	line-height: normal;
-}
-
-.header .top-menu ul li a .link {
-	position: relative;
-	left: 0;
-	top: 0;
-	width: 100%;
-	line-height: 13px;
-}
-
-@media (max-width: 1023px) {
-	.header .top-menu ul li a {
-		padding-bottom: 0;
-		height: 75px;
-	}
 }
 
 .mfp-wrap.popup-box-inline {

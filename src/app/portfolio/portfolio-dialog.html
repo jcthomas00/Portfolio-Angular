@@ -1,26 +1,28 @@
-<mat-dialog-content>
-     <div class="image"><img src="../../assets/images/works/{{data.img}}" alt="{{data.heading}}"></div>
-     <div class="desc">
-          <div class="post-box">
-               <h3>{{data.heading}}</h3>
-               <div>
-                    <p>{{data.description}}</p>
-                    <h5>Tools and tech used:</h5>
-                    <ul class="list-style">
-                         <li *ngFor="let tool of data.tools">{{tool}}</li>
-                    </ul>
+<div>
+     <mat-dialog-content class="border-line-h">
+          <div class="image"><img src="../../assets/images/works/{{data.img}}" alt="{{data.heading}}"></div>
+          <div class="desc">
+               <div class="post-box">
+                    <h3>{{data.heading}}</h3>
+                    <div>
+                         <p>{{data.description}}</p>
+                         <h5>Tools and tech used:</h5>
+                         <ul class="list-style">
+                              <li *ngFor="let tool of data.tools">{{tool}}</li>
+                         </ul>
+                    </div>
+
                </div>
-
           </div>
-     </div>
-</mat-dialog-content>
+     </mat-dialog-content>
 
-<mat-dialog-actions align="center">
+     <mat-dialog-actions align="center" class="">
 
-     <a mat-button *ngIf="data.link" href="{{data.link}}" target="_blank">
-          <span class="text">View Project</span>
-     </a>
-     <a mat-button *ngIf="data.git" href="{{data.git}}" target="_blank">
-          <span class="text">View Code</span>
-     </a>
-</mat-dialog-actions>
+          <a mat-button *ngIf="data.link" href="{{data.link}}" target="_blank" class="lnk">
+               <span class="text">View Project</span>
+          </a>
+          <a mat-button *ngIf="data.git" href="{{data.git}}" target="_blank" class="lnk">
+               <span class="text">View Code</span>
+          </a>
+     </mat-dialog-actions>
+</div>
